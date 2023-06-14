@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Registerer</title>
+    <link href="Styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="holder">
+        <input type="text" id="commandname" class="commandname" placeholder="Input your command name..."/>
+        <input type="text" id="outputmsg" class="outputmsg" placeholder="Input your message..."/>
+
+        <input type="checkbox" id="clog" class="clog"/>
+        <label for="clog">console logs the message</label>
+
+        <input type="checkbox" id="alert" class="alert"/>
+        <label for="alert">alerts the message</label>
+
+        <input type="checkbox" id="display" class="display"/>
+        <label for="display">Displays a message in [Message] box</label>
+
+        <button id="registercommandname" class="registercommandname">Register</button>
+    </div>
+    <br/>
+    <input type="text" id="commandnameexe" placeholder="Input the command name that you want to execute..." class="commandnameexe"/>
+    <button id="execmdbtn">Execute</button>
+    <br/>
+    <br/>
+    <div class="holder2">
+        <h2 class="rgc">Registered commands</h2>
+        <h2 class="messages">Messages</h2>
+    </div>
+    <div class="holder3">
+        <ul id="commanddisplay">
+
+        </ul>
+        <div class="messagedisplay"><p id="messagedisplaypara"></p></div>
+    </div>
+    
+    <script src="Main.js"></script>
+</body>
+</html>
